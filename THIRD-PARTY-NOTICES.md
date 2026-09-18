@@ -41,4 +41,5 @@ SOFTWARE.
 ## 3. 其它参考（未直接使用代码）
 
 - sirxemic/jquery.ripples（MIT）：WebGL 版背景涟漪，https://github.com/sirxemic/jquery.ripples
-  本项目评估后未采用：它依赖 jQuery，且只能作用于 CSS 背景图，无法扰动视频背景。
+  本项目**未直接使用其代码**（它依赖 jQuery，且只能作用于 CSS 背景图，无法扰动视频背景），
+  但本插件的 WebGL 折射渲染思路（把波动场/源图都当纹理、在片元着色器里做 UV 偏移）参考了这类实现。
