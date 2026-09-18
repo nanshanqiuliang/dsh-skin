@@ -1,0 +1,22 @@
+{
+  "name": "dsh-skin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "dsh 界面皮肤插件：本地皮肤文件夹 + 静态/动态皮肤 + 一键从图片生成皮肤（虚化背景 + 主题色提取）+ 星空/流星动态效果",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "immediately": true
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

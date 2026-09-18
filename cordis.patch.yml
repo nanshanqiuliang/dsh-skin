@@ -1,0 +1,7 @@
+# dsh-skin 组合包（bundle）补丁：把皮肤插件的宿主半边挂进插件树。
+#
+# 同一个 package.json 还声明了 dsh.client，因此 @deepseek-ai/dsh-client-modules
+# 会扫描到这个条目，并把 ./client 作为浏览器半边注入页面。
+- insert:
+    - id: skin
+      name: 'dsh-skin'
